@@ -1,208 +1,120 @@
-/* Minimal calm visionary style */
-:root {
-  --bg: #f5f4f1;
-  --panel: #ffffff;
-  --ink: #171717;
-  --muted: #5e5e5e;
-  --accent: #1d274d;
-  --accent-soft: #e8ebf5;
-  --border: #e8e3dc;
-  --shadow: 0 10px 30px rgba(18, 24, 38, 0.08);
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MNX Idea Lab | Creative Consultancy & Concept Development</title>
+  <meta name="description" content="MNX Idea Lab helps creative brands, projects, and businesses turn ideas into practical concepts, event experiences, and modern presentation solutions.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="MNX Idea Lab home">MNX Idea Lab</a>
+      <nav aria-label="Main navigation" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--ink);
-  line-height: 1.6;
-}
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow">Creative consultancy • presentation technology • concept development</div>
+        <h1>Ideas shaped into clear, compelling, executable experiences.</h1>
+        <p>
+          MNX Idea Lab turns creative direction, business thinking, technical planning, and story-driven execution into practical outcomes for projects, events, cultural initiatives, and modern digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="services.html">Explore services</a>
+          <a class="button secondary" href="contact.html">Start a conversation</a>
+        </div>
+      </div>
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+      <aside class="hero-panel">
+        <div class="mini-card">
+          <span class="mini-label">Focus</span>
+          <strong>Events • Culture • Business Ideas • Visual Storytelling</strong>
+        </div>
+        <div class="mini-card">
+          <span class="mini-label">Operating area</span>
+          <strong>Southern Finland + remote project support</strong>
+        </div>
+      </aside>
+    </section>
 
-.container {
-  width: min(1100px, calc(100% - 32px));
-  margin: 0 auto;
-}
+    <section class="container intro-grid">
+      <article class="card">
+        <h2>Who we are</h2>
+        <p>MNX Idea Lab is a concept-driven studio for creative and commercial work where vision, structure, and delivery need to work together.</p>
+      </article>
+      <article class="card">
+        <h2>What we do</h2>
+        <p>We support strategic ideation, presentation planning, event production coordination, artistic concept direction, and practical project execution.</p>
+      </article>
+      <article class="card">
+        <h2>Why it matters</h2>
+        <p>Good ideas need clarity, technical confidence, and the right delivery model. We help bridge the gap between concept and action.</p>
+      </article>
+    </section>
 
-.site-header {
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(8px);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid var(--border);
-}
+    <section class="container split-section">
+      <div>
+        <p class="section-tag">Our approach</p>
+        <h2>From first spark to final delivery.</h2>
+      </div>
+      <div>
+        <p>
+          Whether the objective is a business concept, an event production, a cultural experience, or a creative presentation, we help refine the vision and structure the path forward.
+        </p>
+      </div>
+    </section>
 
-.nav-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 72px;
-}
+    <section class="container metrics">
+      <div class="metric">
+        <strong>Strategy</strong>
+        <span>Concept shaping</span>
+      </div>
+      <div class="metric">
+        <strong>Production</strong>
+        <span>Event support</span>
+      </div>
+      <div class="metric">
+        <strong>Visuals</strong>
+        <span>Storytelling</span>
+      </div>
+      <div class="metric">
+        <strong>Delivery</strong>
+        <span>Practical execution</span>
+      </div>
+    </section>
+  </main>
 
-.brand {
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-}
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MNX Idea Lab</h3>
+        <p>Creative consulting, concept development, and presentation support.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:mnxartlab@gmail.com">mnxartlab@gmail.com</a></p>
+        <p><a href="tel:+358403245206">+358 40 324 5206</a></p>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Kuningattarenkatu 18<br>07900 Loviisa, Finland</p>
+      </div>
+    </div>
+    <div class="container legal-line">
+      <p>© 2026 MNX CREATIVE — MNX IDEA LAB. All rights reserved.</p>
+    </div>
+  </footer>
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.nav a {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.hero {
-  padding: 90px 0 60px;
-}
-
-.eyebrow {
-  color: var(--accent);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  max-width: 760px;
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  line-height: 1.05;
-  letter-spacing: -0.05em;
-  margin: 0 0 20px;
-  color: var(--ink);
-}
-
-.hero p {
-  max-width: 700px;
-  font-size: 1.1rem;
-  color: var(--muted);
-  margin-bottom: 30px;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  padding: 0 22px;
-  border-radius: 999px;
-  border: 1px solid var(--accent);
-  transition: 0.2s ease;
-  font-weight: 600;
-}
-
-.button.primary {
-  background: var(--accent);
-  color: #fff;
-}
-
-.button.secondary {
-  background: transparent;
-  color: var(--accent);
-}
-
-.button:hover {
-  transform: translateY(-1px);
-  text-decoration: none;
-}
-
-.intro-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  padding-bottom: 80px;
-}
-
-.card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  padding: 24px;
-}
-
-.card h2 { margin-top: 0; }
-
-.page-content {
-  padding: 60px 0 80px;
-}
-
-.page-content h1 {
-  font-size: clamp(2.1rem, 4vw, 3.4rem);
-  letter-spacing: -0.04em;
-  margin-top: 0;
-}
-
-.page-content h2 {
-  margin-top: 32px;
-  color: var(--accent);
-}
-
-.page-content ul {
-  padding-left: 20px;
-}
-
-.contact-list {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  padding: 24px;
-}
-
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 30px 0 20px;
-  background: #fff;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 24px;
-}
-
-.legal-line {
-  color: var(--muted);
-  padding-top: 18px;
-  border-top: 1px solid var(--border);
-  margin-top: 18px;
-}
-
-@media (max-width: 760px) {
-  .nav-wrap {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 18px 0;
-  }
-
-  .nav {
-    padding-top: 12px;
-  }
-
-  .intro-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding-top: 60px;
-  }
-}
+  <script src="assets/script.js"></script>
+</body>
+</html>
